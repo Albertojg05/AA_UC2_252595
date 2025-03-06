@@ -10,7 +10,7 @@ package Algoritmos;
  */
 public class Ordenamiento {
 
-    public void burbuja(int[] a) {
+    public static void burbuja(int[] a) {
         for (int i = 1; i < a.length - 1; i++) {
             for (int j = 0; j < a.length - i; j++) {
                 // Comparación
