@@ -15,8 +15,9 @@ public class Pruebas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] a = {10,12,13,11,20};
+        int[] a = {10, 12, 13, 11, 20};
         Ordenamiento.burbuja(a);
+        
+        Ordenamiento.insercion(a);
     }
-    
 }
