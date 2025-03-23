@@ -21,14 +21,14 @@ public class Ordenamiento {
     } // O(n^2)
     
     public static void insercion(int[] a){
-        for (int i = 1; i < a.length; i++) {
-            int key = a[i];
-            int j = i-1;
-            while (j>=0 && a[j]>key) {                
-                a[j+1] = a[j];
-                j--;
+        for (int i = 1; i < a.length; i++) { // (n-1)
+            int key = a[i]; // 1
+            int j = i-1; // 1
+            while (j>=0 && a[j]>key) { // i
+                a[j+1] = a[j]; // 1
+                j--; // 1
             }
-            a[j+1] = key;
+            a[j+1] = key; // 1
         }
-    }
+    } // O(n^2)
 }
