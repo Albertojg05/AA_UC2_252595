@@ -19,4 +19,16 @@ public class Ordenamiento {
             } // (n - i)
         } // (n - 1)
     } // O(n^2)
+    
+    public static void insercion(int[] a){
+        for (int i = 1; i < a.length; i++) {
+            int key = a[i];
+            int j = i-1;
+            while (j>=0 && a[j]>key) {                
+                a[j+1] = a[j];
+                j--;
+            }
+            a[j+1] = key;
+        }
+    }
 }
