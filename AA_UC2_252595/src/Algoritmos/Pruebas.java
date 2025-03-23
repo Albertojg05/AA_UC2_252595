@@ -17,7 +17,8 @@ public class Pruebas {
         // TODO code application logic here
         int[] a = {10, 12, 13, 11, 20};
 //        Ordenamiento.burbuja(a);
-        
-        Ordenamiento.insercion(a);
+//        Ordenamiento.insercion(a);
+        Ordenamiento.seleccion(a);
+            
     }
 }
