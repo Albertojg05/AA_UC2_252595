@@ -33,17 +33,17 @@ public class Ordenamiento {
     } // O(n^2)
     
     public static void seleccion(int[] a){
-        int n = a.length;
-        for (int i = 0; i < n-1; i++) {
-            int minIndex = i;
-            for (int j = i+1; j < n; j++) {
-                if(a[j]<a[minIndex]){
-                    minIndex = j;
+        int n = a.length; // 1
+        for (int i = 0; i < n-1; i++) { // n
+            int minIndex = i; // 1
+            for (int j = i+1; j < n; j++) { // n-1
+                if(a[j]<a[minIndex]){ // 1
+                    minIndex = j; // 1
                 }
             }
-            int aux = a[minIndex];
-            a[minIndex] = a[i];
-            a[i] = aux;
-        }
-    }
+            int aux = a[minIndex]; // 1
+            a[minIndex] = a[i]; // 1
+            a[i] = aux; // 1
+        } // 1+(n+1)+(n-1)+1+1+1+1+1
+    } // O(n^2)
 }
