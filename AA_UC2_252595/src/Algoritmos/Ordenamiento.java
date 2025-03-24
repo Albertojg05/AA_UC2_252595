@@ -46,4 +46,28 @@ public class Ordenamiento {
             a[i] = aux; // 1
         } // 1+(n+1)+(n-1)+1+1+1+1+1
     } // O(n^2)
+    
+    public static int particionar(int[] a, int inicio, int fin){
+        int pivote = a[fin];
+        int i = a[inicio];
+        for(int actual = inicio; actual< fin; actual++){
+            if(a[actual] < pivote){
+                i++;
+                int aux = a[i];
+                a[i]=a[actual];
+                a[actual]=aux;
+            }
+        }
+        int temp = a[i];
+        a[i] = a[fin];
+        a[fin] = temp;
+        
+        return i;
+    }
+    
+    public static void quickSort(int[] a, int inicio, int fin){
+        int pivote = particionar(a,inicio,fin);
+        quickSort(a, inicio, pivote-1);
+        quickSort(a, pivote+1, fin);
+    }
 }
