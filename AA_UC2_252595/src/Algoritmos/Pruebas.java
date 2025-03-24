@@ -18,7 +18,7 @@ public class Pruebas {
         int[] a = {10, 12, 13, 11, 20};
 //        Ordenamiento.burbuja(a);
 //        Ordenamiento.insercion(a);
-        Ordenamiento.seleccion(a);
-            
+//        Ordenamiento.seleccion(a);
+        Ordenamiento.quickSort(a, 0, 4);
     }
 }
